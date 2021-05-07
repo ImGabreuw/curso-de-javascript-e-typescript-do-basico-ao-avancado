@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu HTML</title>
+
+  <style>
+    h1 {
+      /* Estilização para todos os h1 */
+      background: red;
+    }
+
+    h1 {
+      background: blue;
+    }
+
+    /* 
+      Caso exista um vários estilos para apenas um único elemento (como o exemplo acima), 
+      a última estilização será a utilizada pelo navegador 
+    */
+
+
+    p {
+      background: blue;
+    }
+
+    /* Estilização a partir do ID */
+    #cabecalho-dois {
+      background: purple;
+    }
+
+    /* Estilização a partir da CLASS  */
+    .fundo-vermelho {
+      background: red !important;
+      /* 
+        !important = forçar o navegador a utilizar essa estilização, mesmo se 
+        estiver quebrando a hierarquia (OBS: não é recomendado seu uso, optar pelo uso de classes)
+      */
+    }
+
+    /* 
+      Hierarquia do CSS
+      id > class > TAG
+    */
+  </style>
+</head>
+
+<body>
+  <!-- id = identificador da TAG -->
+  <h1 id="cabecalho-um">Título 1</h1>
+  <!-- <h1 id="heading">Título</h1> Não pode ter IDs iguais -->
+  <h1 id="cabecalho-dois">Título 2</h1>
+  <!-- OBS: nomes de IDs -> palavras compostas separadas por "-" e sem acentos -->
+  <!-- Utilidades do ID -> Selecionar o elemento para fazer alterações no JS e CSS-->
+
+
+  <!-- class = definir uma classe para uma -->
+  <h1 class="fundo-vermelho borda-esquerda">
+    Título
+  </h1>
+  <!-- uma TAG pode ter várias classes separadas por espaço -->
+
+  <!-- TAG b => bold = negrito -->
+  <p>Texto em <b>negrito</b></p> 
+</body>
+
+</html>
