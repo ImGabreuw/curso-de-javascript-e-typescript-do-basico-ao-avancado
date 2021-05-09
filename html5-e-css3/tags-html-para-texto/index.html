@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+    h1 {
+      background: red;
+    }
+
+    .img-in-text {
+      width: 50px;
+      height: 50px;
+    }
+
+    .vermelho-grande {
+      color: red;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- O estilo do atributo "style" só se aplica a TAG que o acompanha -->
+  <!-- <h1 style="background: red;">Cabeçalho</h1> -->
+
+  <h1>Cabeçalho</h1>
+  <!-- TAG b e strong deixam o texto/palavra em negrito  -->
+  <!-- OBS: TAG strong é mais semântica | O leitor de tela irá ler com mais intensidade a palavra/texto  -->
+  <!-- TAG i = itálico -->
+  <!-- TAG em = ênfase + itálico -->
+  <p><b>Lorem</b> <strong>ipsum</strong> dolor <i>sit</i> <em>amet</em> consectetur, adipisicing elit. Dolorum, labore.
+  </p>
+
+  <!-- TAG a = adicionar um link/arquivo a partir do atributo "href" -->
+  <!-- Atributo target="_blank" abrir o link/arquivo em uma nova aba do navegador -->
+  <!-- Atributo rel = especificar a relação entre o arquivo (este arquivo) e o link | OBS: essa TAG é muito importante para o SEO-->
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">LINK</a>
+
+  <!-- TAG img = adicionar uma imagem | não tem corpo -->
+  <!-- Atributo "src" = arquivo/link da imagem -->
+  <!-- Atributo "alt" = texto alternativo (MUITO IMPORTANTE), para quando a imagem não for carregada e também para os leitores de tela -->
+  <img
+    src="data:image/jpeg;base64,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"
+    alt="Logo da MDN">
+
+  <!-- Atribuir um link a uma imagem -->
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">
+    <!-- Os atributos "width" e "height" não são muito usados, pois com o CSS essa modificação é mais abrangente -->
+    <img class="img-in-text"
+      src="data:image/jpeg;base64,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"
+      alt="Logo da MDN" width="50" height="44">
+  </a>
+</body>
+
+<!-- TAG del (delete) = faz um traço (risco) na palavra/texto -->
+<p>Lorem <del>ipsum dolor</del> sit amet consectetur, adipisicing elit. Laboriosam, consequuntur!</p>
+<!-- TAG s = possui a mesma função que a TAG del, mas é menos semântico -->
+<p>Lorem <s>ipsum dolor</s> sit amet consectetur, adipisicing elit. Laboriosam, consequuntur!</p>
+
+<!-- TAG ins (insert) = faz um traço (sublinha) na palavra/texto -->
+<p>Lorem ipsum dolor <ins>sit</ins> amet consectetur, adipisicing elit. Laboriosam, consequuntur!</p>
+<!-- TAG u (insert) = possui a mesma função que a TAG ins, porém é menos semântico -->
+<p>Lorem ipsum dolor <u>sit</u> amet consectetur, adipisicing elit. Laboriosam, consequuntur!</p>
+
+<!-- TAG small = diminui a fonte -->
+<p><small>Lorem ipsum dolor sit</small> amet consectetur adipisicing elit. Illo, dignissimos?</p>
+
+<!-- TAG sup = deixar algum trecho mais elevado em relação ao resto de texto (substitui o 2^2 por 2²) -->
+<p>2<sup>2</sup></p>
+
+<!-- TAG sub = deixar algum trecho mais rebaixado em relação ao resto de texto -->
+<p>H<sub>2</sub>O</p>
+
+<!-- TAG q = deixar uma trecho como citação -->
+<!-- Atributo "cite" = anexar uma arquivo/link da fonte dessa citação-->
+<p>Lorem ipsum dolor, <q cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">Outro uso aceitavel
+    para é denotado com o rótulo (label) de parágrafos, que representa notas ou avisos, dentro do texto da
+    página.</q>. Hic, voluptates!
+</p>
+
+<!-- TAG "blockquote" = bloco de citação -->
+<!-- Atributo "cite" = anexar uma arquivo/link da fonte dessa citação-->
+<blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">
+  Aqui ssim eu estou fazendo um bloco de citação
+</blockquote>
+
+<!-- TAG hr = fazer um linha (Uso, por exemplo, para separar conteúdos) -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, recusandae.</p>
+<hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, hic!</p>
+
+<!-- TAG code = inserir um trecho de código (com apenas 1 linha) dentro de um parágrafo (<p>) -->
+<p>Lorem ipsum dolor sit amet consectetur <code>console.log()</code> adipisicing elit. Hic, animi?</p>
+
+<!-- 
+  TAG pre = inserir um trecho de código (de múltiplas linhas) | Essa TAG mantém as indentações e quebra de linha 
+  inseridas dentro do corpo  
+-->
+<pre>
+  <code>
+    for (i = 1; i < quantidadeTR; i++) {
+      $("input:text[name^='item']").val(i);           
+    }
+  </code>
+</pre>
+
+<!-- TAG div e span = ambas são containers genéricos -->
+<!-- 
+  TAG span = containers genéricos inline, ou seja, é possível utilizá-la dentro de uma TAG p, por exemplo. 
+  Geralmente seu uso é feito para fazer estilizações de um certo trecho de um texto. 
+-->
+<p><span style="color: red;">Lorem</span> ipsum, dolor sit amet consectetur adipisicing elit. Non, architecto.</p>
+<p><span class="vermelho-grande">Lorem</span> ipsum, dolor sit amet consectetur adipisicing elit. Non, architecto.</p>
+<!-- TAG div = containers genéricos block, ou seja, não pode ser usado dentro de um parágrafo -->
+<div class="vermelho-grande">Eu sou um bloco</div>
+
+</html>
