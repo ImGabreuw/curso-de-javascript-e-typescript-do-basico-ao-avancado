@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 800px;
+    }
+
+    table td,
+    table th {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: left;
+    }
+
+    table caption {
+      caption-side: top;
+      text-align: left;
+      font-style: italic;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    tfoot td,
+    table th {
+      background-color: #ddd;
+    }
+
+    tfoot {
+      font-style: italic;
+    }
+
+    .responsive-table {
+      max-width: 100%;
+      /* overflow: auto = scroll apenas na div (tabela) */
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, sapiente.</p>
+
+  <div class="responsive-table">
+    <!-- TAG table -->
+    <table>
+      <caption>Uma descrição para tabela</caption>
+      <!-- TAG thead (table head) = cabeçalho da tabela -->
+      <thead>
+        <!-- TAG tr (table row) = linha da tabela (linha) -->
+        <tr>
+          <!-- TAG th (table heading) = título da tabela (coluna) -->
+          <th>Título 1</th>
+          <th>Título 2</th>
+          <th>Título 3</th>
+        </tr>
+      </thead>
+
+      <!-- TAG tbody (table body) = corpo da tabela -->
+      <tbody>
+        <tr>
+          <!-- TAG td (table data) = conteúdo do corpo da tabela -->
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td colspan="2">AQUI</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tbody>
+
+      <!-- TAG tfoot (table footer) = rodapé da tabela -->
+      <tfoot>
+        <tr>
+          <td colspan="2" rowspan="2"></td>
+          <td>Total</td>
+        </tr>
+        <tr>
+          <td>R$555</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+
+</html>
