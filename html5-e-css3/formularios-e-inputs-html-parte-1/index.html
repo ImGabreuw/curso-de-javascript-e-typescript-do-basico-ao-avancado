@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    label {
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#" method="GET" target="_blank" autocomplete="off">
+    <p>Meu formulário</p>
+    <p>
+      <!-- FORMA 1  -->
+      <!-- <label>
+        Nome:
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+      </label> -->
+
+      <!-- TAG input (não tem corpo) -->
+      <!-- Atributo "id" => geralmente usado para linkar com uma TAG label -->
+      <!-- Atributo "name" => identificador do valor recebido para ser utilizado no back-end-->
+      <!-- Atributo "value" => valor padrão do input -->
+      <!-- Atributo "disabled" => desativar o input -->
+      <!-- Atributo "readonly" => não pode escrever no input -->
+      <!-- TAG label -->
+      <!-- Atributo "for" => referência ao ID do input -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+    </p>
+
+    <p>
+      <!-- TAG button (tem corpo) -->
+      <!-- Atributo "type" => "submit" = enviar o formulário | "reset" = volta no estado inicial do formulário -->
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
+    </p>
+  </form>
+</body>
+
+</html>
