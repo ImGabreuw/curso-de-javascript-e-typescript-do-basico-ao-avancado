@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    label {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#" method="GET" target="_blank" autocomplete="off">
+    <p>Meu formulário</p>
+    <p>
+      <!-- FORMA 1  -->
+      <!-- <label>
+        Nome:
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+      </label> -->
+
+      <!-- TAG input (não tem corpo) -->
+      <!-- Atributo "type" => tipo do input -->
+      <!-- Atributo "id" => geralmente usado para linkar com uma TAG label -->
+      <!-- Atributo "name" => identificador do valor recebido para ser utilizado no back-end-->
+      <!-- Atributo "value" => valor padrão do input -->
+      <!-- Atributo "disabled" => desativar o input -->
+      <!-- Atributo "readonly" => não pode escrever no input -->
+      <!-- TAG label -->
+      <!-- Atributo "for" => referência ao ID do input -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+    </p>
+
+    <p>
+      <label for="dev">Sou um dev:</label>
+      <input type="checkbox" id="dev" name="dev" value="sim" checked>
+    </p>
+
+    <p>
+      Gênero: <br>
+
+      <label for="feminino">feminino</label>
+      <input type="radio" id="feminino" name="genero" value="feminino"><br>
+
+      <label for="masculino">masculino</label>
+      <input type="radio" id="masculino" name="genero" value="masculino" checked><br>
+
+      <label for="outro">outro</label>
+      <input type="radio" id="outro" name="genero" value="outro"><br>
+    </p>
+
+    <p>
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" value="2020-04-20">
+    </p>
+
+    <p>
+      <label for="datetime">Data e hora:</label>
+      <input type="datetime-local" id="datetime" name="datetime" value="2020-04-20T20:00">
+    </p>
+
+    <p>
+      <label for="time">Tempo:</label>
+      <input type="time" id="time" name="time" value="20:00:01">
+    </p>
+
+    <p>
+      <label for="color">Cor:</label>
+      <input type="color" id="color" name="color" value="#FF0000">
+    </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="email@email.com">
+    </p>
+
+    <p>
+      <label for="file">Arquivo:</label>
+      <input type="file" id="file" name="file" accept="image/*" multiple>
+    </p>
+
+    <p>
+      <label for="number">Número:</label>
+      <input type="number" id="number" name="number" placeholder="Digite um número" min="10" max="50" step="5">
+    </p>
+
+    <p>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" placeholder="Digite sua senha">
+    </p>
+
+    <p>
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range" min="0" max="100" step="10" list="options">
+
+      <datalist id="options">
+        <option value="0" label="0%">
+        <option value="10" label="10%">
+        <option value="20" label="20%">
+        <option value="30" label="30%">
+        <option value="40" label="40%">
+        <option value="50" label="50%">
+        <option value="60" label="60%">
+        <option value="70" label="70%">
+        <option value="80" label="80%">
+        <option value="90" label="90%">
+        <option value="100" label="100%">
+      </datalist>
+    </p>
+
+    <p>
+      <label for="url">Link:</label>
+      <input type="url" id="url" name="url" placeholder="Digite um link">
+    </p>
+
+    <p>
+      <label for="search">Link:</label>
+      <!-- type="search" é apenas semântico = type="text" -->
+      <input type="search" id="search" name="search" placeholder="Digite um link">
+    </p>
+
+    <p>
+      <!-- TAG button (tem corpo) -->
+      <!-- Atributo "type" => "submit" = enviar o formulário | "reset" = volta no estado inicial do formulário -->
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
+    </p>
+  </form>
+
+  <p>
+    <label for="select">Selecionar:</label>
+    <select name="select" id="select" multiple>
+      <optgroup label="Teste">
+        <option value="valor1" disabled>Valor 1</option>
+        <option value="valor2" label="Valor 2">
+        <option value="valor3" selected>Valor 3</option>
+      </optgroup>
+
+      <!-- <optgroup label="Teste">
+        <option value="valor1" disabled>Valor 1</option>
+        <option value="valor2" label="Valor 2">
+        <option value="valor3" selected>Valor 3</option>
+      </optgroup> -->
+    </select>
+  </p>
+
+  <p>
+    <label for="textarea">Area de texto:</label>
+    <textarea name="textarea" id="textarea" rows="3" cols="9">
+      Digite alguma coisa
+    </textarea>
+  </p>
+</body>
+
+</html>
