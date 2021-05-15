@@ -1,0 +1,73 @@
+/* "*" = selecionar todos os elementos da página */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* seletor de TAGs = selecionar todas as ocorrências de uma determinada TAG na página */
+/* p, h1 {
+  color: purple;
+} */
+
+/* seletor de descendentes */
+/* body div section p,
+body div section h1 {
+  color: red;
+} */
+
+/* seletor de classe */
+/* .color-red {
+  color: red;
+} */
+/* .main-content h2 {
+  font-style: italic;
+}
+.main-content .heading {
+  font-style: italic;
+  color: red;
+} */
+/* Selecionar um elemento específico */
+/* div.main-content h2.heading {
+  font-style: italic;
+  color: red;
+} */
+/* body.error div.main-content h2.heading {
+  font-style: italic;
+  color: red;
+} */
+
+/* .pai {
+  color: red;
+} */
+
+/* Por padrão, os navegadores, colocam para os filhos herdarem as características do pai. Exemplo:
+
+div {
+  color: inherit
+}
+ 
+Para que isso não ocorra, é necessário fazer o seguinte:
+*/
+div {
+  color: initial;
+  margin-left: 20px;
+}
+/* .pai {
+  color: red;
+} */
+
+/* Seletor para múltiplas classes */
+/* .pai.filha { TAG precisa ter a classe pai e filha. Exemplo: <element class="pai filha">
+  color: red;
+} */
+
+/* OBS: .pai.filha e .pai .filha são coisas diferentes */
+
+/* .pai .filha {
+  color: red;
+} */
+
+/* Seletor de filho */
+.pai > .filha > .filha-da-filha {
+  color: red;
+}
