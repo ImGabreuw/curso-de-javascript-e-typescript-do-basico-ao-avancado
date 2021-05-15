@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjacent sibling combinator = selecionar todos os elementos que vem imediatamente depois de uma determinado elemento */
+/* .pai h1 + p {
+  color: red;
+} */
+/* .pai p + h1 {
+  color: yellow;
+} */
+
+/* General sibling selectors = selecionar todos os elementos que depois de um determinado elemento */
+.pai h1 ~ p {
+  color: red;
+}
+
+/* Seletor por atributo = selecionar todos os elementos que tenha um determinado atributo */
+[meu-atributo] {
+  color: red;
+}
+
+/* Selecionar um elemento a partir do valor recebido no atributo */
+[meu-atributo="valor"] {
+  color: yellow;
+}
+
+[checked] {
+  width: 50px;
+  height: 50px;
+}
