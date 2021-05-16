@@ -1,0 +1,23 @@
+[meu-atributo~="valor1"] {
+  color: red;
+}
+
+/* Seletor quando um atributo possui um valor que vem seguido de um traço */
+[meu-atributo|="valor"] {
+  color: red;
+}
+
+/* Seletor quando um atributo possui um valor que começa com uma determinada letra */
+[meu-atributo^="v"] {
+  color: red;
+}
+
+/* Seletor quando um atributo possui um valor que termina com uma determinada letra */
+[meu-atributo$="r"] {
+  color: red;
+}
+
+/* Seletor quando um atributo possui um valor que contem uma determinada letra */
+[meu-atributo*="lor"] {
+  color: red;
+}
