@@ -1,0 +1,72 @@
+.heading {
+  transition: all 600ms ease-in-out;
+}
+
+/* Pseudo-classe vem depois dos ":" */
+
+.heading:hover {
+  background: red;
+}
+
+a {
+  color: darkorange;
+}
+
+/* :link = links que não foram visitados */
+
+a:link {
+  color: deeppink;
+}
+
+/* :visited = links que já foram visitados */
+
+a:visited {
+  color: firebrick;
+}
+
+a:hover {
+  background: darkblue;
+  color: white;
+  text-decoration: none;
+}
+
+/* :active = quando o link for clicado */
+
+a:active {
+  background: darkslategray;
+  color: white;
+  text-decoration: none;
+}
+
+/* :focus = quando um input estiver em foco */
+
+/* input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: 1px solid black;
+} */
+
+/* input:disabled {
+  background: rebeccapurple;
+  cursor: not-allowed;
+} */
+
+/* input:enabled {
+  background: darkblue;
+} */
+
+/* input:checked + p {
+  background: red;
+} */
+
+input:required {
+  background: red;
+}
+
+.pai .lista li:first-child {
+  background: red;
+}
+
+.pai .lista li:last-child {
+  background: blue;
+}
