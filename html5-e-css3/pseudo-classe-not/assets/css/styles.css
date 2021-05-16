@@ -1,0 +1,8 @@
+/* Selecionar todos os "p" menos o "p" com a class="meio" */
+p:not(.meio) {
+  color: blue;
+}
+
+input:not(:checked) + p {
+  background: yellow;
+}
