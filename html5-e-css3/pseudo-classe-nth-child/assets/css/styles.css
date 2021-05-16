@@ -1,0 +1,24 @@
+/* Selecionar um irmão a partir do índice */
+ul li:nth-child(2) {
+  background: red;
+}
+
+/* Selecionar todos os irmãos com índice par  */
+ul li:nth-child(even) {
+  background: yellow;
+}
+
+/* Selecionar todos os irmãos com índice ímpar  */
+ul li:nth-child(odd) {
+  background: green;
+}
+
+/* Selecionar todos os irmãos de 3 em 3  */
+ul li:nth-child(3n) {
+  background: darkolivegreen;
+}
+
+/* Selecionar todos os irmãos de 3 em 3 a partir do índice 5  */
+ul li:nth-child(3n + 5) {
+  background: darkblue;
+}
