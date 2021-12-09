@@ -57,3 +57,28 @@ function criarPessoa(nome, sobrenome, idade) {
 const pessoa = criarPessoa("Luiz", "Otávio", 25);
 console.log(pessoa); // // { nome: 'Luiz', sobrenome: 'Otávio', idade: 25 }
 ```
+
+--
+
+## Spread operator
+
+### Função
+
+Copiar todos os atributos de um `object`, além de ter a possibilidade de adicionar mais atributos, nesse outro `object`
+
+### Exemplo
+
+```js
+const pessoa1 = {
+  nome: "Luiz",
+  sobrenome: "Otávio"
+};
+
+const pessoa2 = {
+  ...pessoa1,
+  idade: 25
+}
+
+console.log(pessoa1); // { nome: 'Luiz', sobrenome: 'Otávio' }
+console.log(pessoa2); // { nome: 'Luiz', sobrenome: 'Otávio', idade: 25 }
+```

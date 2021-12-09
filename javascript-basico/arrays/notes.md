@@ -155,3 +155,27 @@ const alunos = ["Luiz", "Maria", "João", "Luiza", "Eduardo"];
 
 console.log(typeof alunos); // object
 ```
+
+---
+
+## spread operator
+
+### Função
+
+Copiar todos os elementos de um `Array`, além de ter a possibilidade de adicionar mais elementos, nesse outro `Array`
+
+### Exemplo
+
+```js
+let a = [1, 2, 3];
+let b = [...a];
+
+console.log(a, b); // [ 1, 2, 3 ] [ 1, 2, 3 ]
+```
+
+```js
+let a = [1, 2, 3];
+let b = [...a, 4, 5];
+
+console.log(a, b); // [ 1, 2, 3 ] [ 1, 2, 3, 4, 5 ]
+```
