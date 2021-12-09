@@ -59,6 +59,12 @@ Declarar trechos que códigos que podem ser reutilizados ao longo da aplicação
   console.log(raiz(25)); // 5
   ```
 
+* Parâmetro VS argumento
+
+  * **Argumento**: é o valor passado no argumento de uma função
+
+  * **Parâmetro**: é o valor que uma função aceita (assinatura da função)
+
 ### Sintaxe
 
 ```js
