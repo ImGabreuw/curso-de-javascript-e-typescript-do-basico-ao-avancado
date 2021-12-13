@@ -65,3 +65,23 @@ if (hora >= 0 && hora < 12) {
 
 // Boa noite!
 ```
+
+* No encadeamento de `if-else`, caso tenha mais de 1 condição verdadeira, será executada a primeira delas e as demais serão ignoradas
+
+  ```js
+  const nome = "Luiz";
+  const idade = 17;
+  const genero = "M";
+
+  if (nome === "Gabriel") {
+    console.log(nome);
+  } else if (idade === 17) { // bloco executado
+    console.log(idade);
+  } else if (genero === "M") {
+    console.log(genero);
+  } else {
+    console.log("Não entendi ...")
+  }
+
+  // 17
+  ```
