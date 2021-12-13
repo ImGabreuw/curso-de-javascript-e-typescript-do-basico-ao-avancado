@@ -1,0 +1,1 @@
+console.log("Luiz Otávio" && 0 && "Maria");
