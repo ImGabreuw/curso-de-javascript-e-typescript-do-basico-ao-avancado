@@ -179,3 +179,23 @@ let b = [...a, 4, 5];
 
 console.log(a, b); // [ 1, 2, 3 ] [ 1, 2, 3, 4, 5 ]
 ```
+
+---
+
+## Array unidimensional VS Array bidimensional
+
+### Array unidimensional
+
+> Também chamado de vetor
+
+```js
+const unidimensional = [1, 2, 3];
+```
+
+### Array bidimensional
+
+> Também chamado de matriz
+
+```js
+const unidimensional = [ [1, 2, 3], [1, 2, 3], [1, 2, 3]];
+```
