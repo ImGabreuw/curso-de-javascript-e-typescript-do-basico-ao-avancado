@@ -1,4 +1,4 @@
-#  Método Splice
+# Método Splice
 
 ### **Definição**
 
