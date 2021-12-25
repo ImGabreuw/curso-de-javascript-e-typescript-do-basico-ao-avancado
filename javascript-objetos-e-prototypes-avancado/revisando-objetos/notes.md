@@ -185,10 +185,23 @@ console.log(pessoa); // Pessoa { nome: 'Luiz', sobrenome: 'Miranda' }
 
 > ## Método `freeze()`
 
-### Definição
+### **Definição**
 
 Bloquear qualquer tipo de alteração no estado de um objeto.
 
 > **OBS**: "estado de um objeto" são os valores dos atributos desse objeto.
 
-### Exemplo
+### **Exemplo**
+
+```js
+function Pessoa(nome, sobrenome) {
+  this.nome = nome;
+  this.sobrenome = sobrenome;
+
+  Object.freeze(this);
+}
+
+const pessoa = new Pessoa("Luiz", "Miranda");
+ 
+console.log(pessoa); // Pessoa { nome: 'Luiz', sobrenome: 'Miranda' }
+```
