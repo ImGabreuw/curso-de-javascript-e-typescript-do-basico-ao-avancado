@@ -6,6 +6,8 @@
 
 > **IMPORTANTE**: o método `filter()` recebe como argumento uma *callback function*
 
+> **OBS**: o método `filter()` sempre retorna um `array` com o tamanho menor ou igual ao `array` original.
+
 ### **Exemplo**
 
 ```js
