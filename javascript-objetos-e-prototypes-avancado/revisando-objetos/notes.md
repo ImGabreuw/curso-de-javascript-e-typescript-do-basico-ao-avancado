@@ -180,3 +180,15 @@ const pessoa = new Pessoa("Luiz", "Miranda");
 
 console.log(pessoa); // Pessoa { nome: 'Luiz', sobrenome: 'Miranda' }
 ```
+
+---
+
+> ## Método `freeze()`
+
+### Definição
+
+Bloquear qualquer tipo de alteração no estado de um objeto.
+
+> **OBS**: "estado de um objeto" são os valores dos atributos desse objeto.
+
+### Exemplo
