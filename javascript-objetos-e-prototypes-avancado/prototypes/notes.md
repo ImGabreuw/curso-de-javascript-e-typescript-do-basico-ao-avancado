@@ -2,7 +2,7 @@
 
 ### Definição
 
-> JavaScript é baseado em *prototypes* (protótipos) para acessar propriedades e métodos de um objeto para outro.
+> JavaScript é baseado em *prototypes* (protótipos) para acessar propriedades e métodos de um objeto para outro, ou seja, é a forma da linguagem de trabalhar com POO.
 
 *Prototypes* é um objeto, que é anexado automaticamente pelo JavaScript, nos objetos criados pela função construtora. No objeto `prototype` é armazenado os "moldes/modelos" para a replicar os métodos em todas as instâncias.
 
