@@ -46,8 +46,6 @@ class ValidarCPF {
   
     if (this.isSequencia()) return false;
 
-    if (!this.gerarNovoCpf()) return false;
-  
     return this.gerarNovoCpf() === this.cpfLimpo;
   }
 
@@ -57,9 +55,3 @@ class ValidarCPF {
   }
 
 }
-
-let cpf = new ValidarCPF("705.484.450-52");
-console.log(cpf.cpfEnviado, cpf.printBonito());
-
-cpf = new ValidarCPF("111.111.111-11");
-console.log(cpf.cpfEnviado, cpf.printBonito());
