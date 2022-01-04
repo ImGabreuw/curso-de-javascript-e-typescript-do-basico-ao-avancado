@@ -10,12 +10,12 @@ mongoose
   .catch((err) => console.log(err));
 
 const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
+const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 
 const sessionOptions = session({
   secret: "adwaddhwdaposdwnda",
-  store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  store: MongoStore.create({ mongoUrl: process.env.CONNECTION_STRING }),
   resave: false,
   saveUninitialized: false,
   cookie: {
@@ -23,9 +23,6 @@ const sessionOptions = session({
     httpOnly: true,
   },
 });
-
-app.use(sessionOptions);
-app.use(flash());
 
 const app = express();
 const routes = require("./routes");
@@ -37,6 +34,9 @@ app.use(
 );
 app.use(routes);
 app.use(express.static(path.resolve(__dirname, "public")));
+
+app.use(sessionOptions);
+app.use(flash());
 
 app.set("views", path.resolve(__dirname, "src", "views"));
 app.set("view engine", "ejs");
