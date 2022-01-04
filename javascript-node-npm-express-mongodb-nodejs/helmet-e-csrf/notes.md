@@ -36,6 +36,12 @@
 
 ![](https://miro.medium.com/max/700/0*VJgOKYMq_6fo4LC6.png)
 
+> ## **`csurf`**
+
+### **Definição**
+
+É uma biblioteca para criar e validar *CSRF Token* em formulários.
+
 ### **Configuração**
 
 1. Importar o pacote `csurf` com NPM:
