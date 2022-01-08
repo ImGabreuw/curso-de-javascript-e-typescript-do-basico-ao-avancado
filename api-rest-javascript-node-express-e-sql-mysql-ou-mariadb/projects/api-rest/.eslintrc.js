@@ -12,5 +12,6 @@ module.exports = {
     "no-console": "off",
     quotes: "off",
     "class-methods-use-this": "off",
+    "import/first": "off",
   },
 };
