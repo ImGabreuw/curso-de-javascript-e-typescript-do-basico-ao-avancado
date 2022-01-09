@@ -1,8 +1,8 @@
-### Index
+### Home - Index
 
 GET http://localhost:3001
 
-### Users
+### Users - Store
 
 POST http://localhost:3001/users
 Content-Type: application/json
@@ -12,3 +12,26 @@ Content-Type: application/json
   "password": "123456",
   "email": "joao@gmail.com"
 }
+
+### Users - Store
+
+GET http://localhost:3001/users
+
+### Users - Show
+
+GET http://localhost:3001/users/1
+
+### Users - Update
+
+PUT http://localhost:3001/users/1
+Content-Type: application/json
+
+{
+  "nome": "joão",
+  "password": "123456",
+  "email": "joao.teste@gmail.com"
+}
+
+### Users - Delete
+
+DELETE http://localhost:3001/users/1

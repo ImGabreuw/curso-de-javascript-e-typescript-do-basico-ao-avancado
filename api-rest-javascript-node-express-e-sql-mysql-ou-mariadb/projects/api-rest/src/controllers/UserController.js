@@ -5,11 +5,85 @@ class UserController {
     try {
       const user = await User.create(req.body);
 
-      res.json(user);
+      return res.status(201).json(user);
     } catch (err) {
-      res.status(400).json({
+      return res.status(400).json({
         errors: err.errors.map((error) => error.message),
       });
+    }
+  }
+
+  async index(req, res) {
+    try {
+      const users = await User.findAll();
+
+      return res.json(users);
+    } catch (err) {
+      return res.json(null);
+    }
+  }
+
+  async show(req, res) {
+    try {
+      const user = await User.findByPk(req.params.id);
+
+      return res.json(user);
+    } catch (err) {
+      return res.json(null);
+    }
+  }
+
+  async update(req, res) {
+    try {
+      const { id } = req.params;
+
+      if (!id) {
+        return res.status(400).json({
+          errors: ["ID não enviado."],
+        });
+      }
+
+      const user = await User.findByPk(id);
+
+      if (!user) {
+        return res.send(404).json({
+          errors: ["Usuário não existe."],
+        });
+      }
+
+      const userAtualizado = await user.update(req.body);
+
+      return res.json(userAtualizado);
+    } catch (err) {
+      return res.status(400).json({
+        errors: err.errors.map((error) => error.message),
+      });
+    }
+  }
+
+  async delete(req, res) {
+    try {
+      const { id } = req.params;
+
+      if (!id) {
+        return res.status(400).json({
+          errors: ["ID não enviado."],
+        });
+      }
+
+      const user = await User.findByPk(id);
+
+      if (!user) {
+        return res.send(404).json({
+          errors: ["Usuário não existe."],
+        });
+      }
+
+      await user.destroy();
+
+      return res.status(204).json(user);
+    } catch (err) {
+      return res.status(404).json(null);
     }
   }
 }
