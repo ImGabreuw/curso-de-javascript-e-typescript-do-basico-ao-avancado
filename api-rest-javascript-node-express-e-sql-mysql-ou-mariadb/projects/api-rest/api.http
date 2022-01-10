@@ -1,3 +1,5 @@
+@token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb2FvQGdtYWlsLmNvbSIsImlhdCI6MTY0MTc2MzI5OSwiZXhwIjoxNjQyMzY4MDk5fQ.ikNJ_FmS6N58v1HsT1bT5tWk037URSqOPhW9shPTT6o"
+
 ### Home - Index
 
 GET http://localhost:3001
@@ -44,3 +46,4 @@ Content-Type: application/json
 {
   "email": "joao.teste@gmail.com"
 }
+
