@@ -13,7 +13,7 @@ export default {
       return callback(null, true);
     },
     destination: (req, file, callback) => {
-      callback(null, resolve(__dirname, "..", ",,", "upload"));
+      callback(null, resolve(__dirname, "..", ",,", "upload", "images"));
     },
     filename: (req, file, callback) => {
       callback(null, `${Date.now()}_${aleatorio}${extname(file.originalname)}`);
