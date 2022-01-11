@@ -87,3 +87,8 @@ Authorization: {{token}}
 {
   "nome": "Maria da Silva"
 }
+
+### Fotos - Store
+POST http://localhost:3001/fotos
+Content-Type: image/png
+Content-Disposition: form-data; name="foto"; filename="foto-aluno.png"
