@@ -50,6 +50,40 @@ Content-Type: application/json
   "email": "joao.teste@gmail.com"
 }
 
-### Alunos = Index
+### Alunos - Index
 
 GET http://localhost:3001/alunos
+
+### Alunos - Store
+
+POST http://localhost:3001/alunos
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "nome": "Maria",
+  "sobrenome": "Miranda",
+  "email": "maria@gmail.com",
+  "idade": "50",
+  "peso": "87.50",
+  "altura": "1.78"
+}
+
+### Alunos - Show
+
+GET http://localhost:3001/alunos/1
+
+### Alunos - Delete
+
+DELETE http://localhost:3001/alunos/1
+Authorization: {{token}}
+
+### Alunos - Update
+
+PUT http://localhost:3001/alunos/1
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "nome": "Maria da Silva"
+}
