@@ -50,3 +50,6 @@ Content-Type: application/json
   "email": "joao.teste@gmail.com"
 }
 
+### Alunos = Index
+
+GET http://localhost:3001/alunos
