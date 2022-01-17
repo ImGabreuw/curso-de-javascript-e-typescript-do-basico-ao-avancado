@@ -22,7 +22,7 @@
 
 **Componentes** são elementos da páginas que podem ser reutilizados em outros páginas da aplicação.
 
-Todo componente React precisa importar o módulo `React` (`import React from 'React'`), mesmo se ele não for utilizado no arquivo.
+Todo componente React precisa importar o módulo `react` (`import React from 'react'`), mesmo se ele não for utilizado no arquivo.
 
 ### **Componente sem estado**
 
