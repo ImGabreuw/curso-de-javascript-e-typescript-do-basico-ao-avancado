@@ -1,0 +1,26 @@
+{
+  "code-runner.executorMap": {
+    "typescript": "clear && npx ts-node --files",
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#0098ff",
+    "activityBar.activeBorder": "#bf0072",
+    "activityBar.background": "#0098ff",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#bf0072",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#0098ff",
+    "statusBar.background": "#0098ff",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#33adff",
+    "statusBarItem.remoteBackground": "#0098ff",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "tab.activeBorder": "#0098ff",
+    "titleBar.activeBackground": "#0098ff",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#0098ff99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#007acc"
+}
